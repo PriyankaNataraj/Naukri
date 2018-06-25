@@ -1,0 +1,310 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 25 02:49:47 PDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>358 seconds (358211 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testscripts.PhonenoTest.uploademail()'><b>uploademail</b><br>Test class: testscripts.PhonenoTest<br/>
+<a href="#Output-1950800085" onClick='toggleBox("Output-1950800085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1950800085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1950800085">
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://www.naukri.com/mnjuser/settings/communication&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;SH7-PC&apos;, ip: &apos;192.168.31.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9064, moz:profile: C:\Users\sh7\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9e93c5dc-2062-416c-849c-3c42fb2fb6cd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pom.PhonenoPage.settings(PhonenoPage.java:37)
+	at testscripts.PhonenoTest.uploademail(PhonenoTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1950800085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1950800085'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://www.naukri.com/mnjuser/settings/communication&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;SH7-PC&apos;, ip: &apos;192.168.31.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_141&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9064, moz:profile: C:\Users\sh7\AppData\Local\..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9e93c5dc-2062-416c-849c-3c42fb2fb6cd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at pom.PhonenoPage.settings(PhonenoPage.java:37)
+	at testscripts.PhonenoTest.uploademail(PhonenoTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>27</td>
+<td>testscripts.PhonenoTest@3dfc5fb8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testscripts.UpdateeduTest.education()'><b>education</b><br>Test class: testscripts.UpdateeduTest<br/>
+<a href="#Output-2123222442" onClick='toggleBox("Output-2123222442", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2123222442" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2123222442">
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>testscripts.UpdateeduTest@69a3d1d</td></tr>
+<tr>
+<td title='testscripts.NotifyTest.education()'><b>education</b><br>Test class: testscripts.NotifyTest<br/>
+<a href="#Output-192428201" onClick='toggleBox("Output-192428201", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-192428201" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-192428201">
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>testscripts.NotifyTest@480bdb19</td></tr>
+<tr>
+<td title='testscripts.PendingViewTest.pending()'><b>pending</b><br>Test class: testscripts.PendingViewTest<br/>
+<a href="#Output-1547883191" onClick='toggleBox("Output-1547883191", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1547883191" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1547883191">
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>testscripts.PendingViewTest@2a556333</td></tr>
+<tr>
+<td title='testscripts.PhotoTest.photo()'><b>photo</b><br>Test class: testscripts.PhotoTest<br/>
+<a href="#Output-1492875057" onClick='toggleBox("Output-1492875057", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1492875057" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1492875057">
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>testscripts.PhotoTest@86be70a</td></tr>
+<tr>
+<td title='testscripts.ResumeTest.summary()'><b>summary</b><br>Test class: testscripts.ResumeTest<br/>
+<a href="#Output-1376017854" onClick='toggleBox("Output-1376017854", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1376017854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1376017854">
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>testscripts.ResumeTest@2a742aa2</td></tr>
+<tr>
+<td title='testscripts.UpdateskillsTest.update()'><b>update</b><br>Test class: testscripts.UpdateskillsTest<br/>
+<a href="#Output-1539947037" onClick='toggleBox("Output-1539947037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1539947037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1539947037">
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>testscripts.UpdateskillsTest@7d70d1b1</td></tr>
+<tr>
+<td title='testscripts.ChangeemailTest.uploademail()'><b>uploademail</b><br>Test class: testscripts.ChangeemailTest<br/>
+<a href="#Output-1956415355" onClick='toggleBox("Output-1956415355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1956415355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1956415355">
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>testscripts.ChangeemailTest@467aecef</td></tr>
+<tr>
+<td title='testscripts.LoginTest.uploadingCV()'><b>uploadingCV</b><br>Test class: testscripts.LoginTest<br/>
+<a href="#Output-708613859" onClick='toggleBox("Output-708613859", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-708613859" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-708613859">
+Pass:Element is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>testscripts.LoginTest@3cb1ffe6</td></tr>
+</table><p>
+</body>
+</html>
